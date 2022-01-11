@@ -25,10 +25,10 @@ public class ThemeParkTest {
     }
 
     @Test
-    public void hasVisited(){
-        themePark.
-
-
+    public void hasVisited() {
+        themePark.visit(visitor, attraction);
+        assertEquals(1, visitor.getNumberOfAttractions());
+        assertEquals(1,attraction.getVisitCount());
     }
 
 }
